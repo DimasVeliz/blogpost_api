@@ -28,7 +28,12 @@ public class BlogPostController {
     }
 
     @GetMapping(path = "/posts")
-    public ResponseEntity<List<PostDto>> getAllTopics(@RequestParam int topicId){
+        public ResponseEntity<List<PostDto>> getAllTopics(@RequestParam int topicId){
         return new ResponseEntity<>(blogPostService.getAllPostByTopicId(topicId), HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/popular")
+    public ResponseEntity<List<PostDto>> getMostPopular(){
+        return new ResponseEntity<>(blogPostService.getMostPopular(), HttpStatus.OK);
     }
 }

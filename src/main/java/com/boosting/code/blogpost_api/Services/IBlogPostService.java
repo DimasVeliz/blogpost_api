@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IBlogPostService {
     List<PostDto> getAllPostByTopicId(int topicId);
+
+    List<PostDto> getMostPopular();
 }

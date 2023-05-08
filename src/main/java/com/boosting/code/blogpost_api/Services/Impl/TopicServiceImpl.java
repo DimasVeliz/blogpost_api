@@ -21,6 +21,7 @@ public class TopicServiceImpl implements ITopicService {
                         .builder()
                         .name(topic.getName())
                         .description(topic.getDescription())
+                        .image(topic.getImage())
                         .build()).toList();
     }
 }

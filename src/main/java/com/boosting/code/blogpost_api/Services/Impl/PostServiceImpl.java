@@ -6,6 +6,8 @@ import com.boosting.code.blogpost_api.Services.IBlogPostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -24,5 +26,10 @@ public class PostServiceImpl implements IBlogPostService {
                         .text(post.getText())
                         .build()
                 ).toList();
+    }
+
+    @Override
+    public List<PostDto> getMostPopular() {
+        return Collections.EMPTY_LIST;
     }
 }

@@ -18,11 +18,11 @@ CREATE TABLE post (
   FOREIGN KEY (topic_id) REFERENCES topic(id)
 );
 
-INSERT INTO topic (name, description) VALUES ('Bash', 'This is the description for topic Bash.');
-INSERT INTO topic (name, description) VALUES ('CPP', 'This is the description for topic CPP.');
-INSERT INTO topic (name, description) VALUES ('Python', 'This is the description for topic Python.');
-INSERT INTO topic (name, description) VALUES ('Dotnet', 'This is the description for topic Dotnet.');
-INSERT INTO topic (name, description) VALUES ('Coding', 'This is the description for topic Coding.');
+INSERT INTO topic (name, description,image) VALUES ('Bash', 'This is the description for topic Bash.','https://via.placeholder.com/300x200.png?text=Bash+Image');
+INSERT INTO topic (name, description,image) VALUES ('CPP', 'This is the description for topic CPP.','https://via.placeholder.com/300x200.png?text=CPP+Image');
+INSERT INTO topic (name, description,image) VALUES ('Python', 'This is the description for topic Python.','https://via.placeholder.com/300x200.png?text=Python+Image');
+INSERT INTO topic (name, description,image) VALUES ('Dotnet', 'This is the description for topic Dotnet.','https://via.placeholder.com/300x200.png?text=Dotnet+Image');
+INSERT INTO topic (name, description,image) VALUES ('Coding', 'This is the description for topic Coding.','https://via.placeholder.com/300x200.png?text=Coding+Image');
 
 
 INSERT INTO post (topic_id, image, text) VALUES (1, 'This is a test image 1.', 'This is the text for post 1 in topic Bash.',0);
